@@ -4,12 +4,11 @@ WORKDIR /app
 EXPOSE 3333
 EXPOSE 8332
 
-RUN apk add --no-cache \
+RUN apk add --update \
 	build-base \
 	git \
-	python-dev
+	python2-dev
 	
-RUN apk add --update libressl-dev
 
 COPY . ./
 RUN python distribute_setup.py && \
