@@ -8,7 +8,7 @@ RUN apk add --no-cache \
 	build-base \
 	git \
 	python-dev\
-	libssl-dev
+	libressl-dev
 
 COPY . ./
 RUN python distribute_setup.py && \
