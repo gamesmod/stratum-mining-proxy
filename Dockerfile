@@ -8,7 +8,8 @@ RUN apk add --update \
 	build-base \
 	git \
 	python2-dev \
-	pip
+	python27 \
+	py-pip
 	
 
 COPY . ./
