@@ -7,8 +7,9 @@ EXPOSE 8332
 RUN apk add --no-cache \
 	build-base \
 	git \
-	python-dev\
-	libressl-dev
+	python-dev
+	
+RUN apk add libressl-dev
 
 COPY . ./
 RUN python distribute_setup.py && \
