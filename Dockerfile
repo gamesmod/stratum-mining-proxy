@@ -7,7 +7,7 @@ EXPOSE 8332
 RUN apk add --no-cache \
 	build-base \
 	git \
-	python-dev
+	python-dev\
 	libssl-dev
 
 COPY . ./
