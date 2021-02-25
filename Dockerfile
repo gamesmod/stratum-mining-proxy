@@ -9,7 +9,7 @@ RUN apk add --no-cache \
 	git \
 	python-dev
 	
-RUN apk add libressl-dev
+RUN apk add --update libressl-dev
 
 COPY . ./
 RUN python distribute_setup.py && \
