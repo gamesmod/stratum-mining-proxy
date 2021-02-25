@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 
 WORKDIR /app
 EXPOSE 3333
