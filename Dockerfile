@@ -7,7 +7,8 @@ EXPOSE 8332
 RUN apk add --update \
 	build-base \
 	git \
-	python2-dev
+	python2-dev \
+	pip
 	
 
 COPY . ./
